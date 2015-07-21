@@ -162,6 +162,7 @@ make install && \
 
 # checkout required branch, apply patch(es), configure and build kodi
 cd /tmp/xbmc && \
+git checkout $kodiCheckout && \
 # Configure, make, install kodi
 ./bootstrap && \
 ./configure \
